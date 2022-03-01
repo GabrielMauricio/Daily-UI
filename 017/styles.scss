@@ -1,0 +1,120 @@
+@use "../partials" as *;
+* {
+    font-family: $fuenteTajawal;
+    font-size: 16px;
+}
+#todo {
+    background-color: $blanco-oscuro2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .boleta {
+        width: 600px;
+        padding: 50px;
+        background-color: white;
+        color: $negro1;
+
+        #header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            
+
+            hgroup {
+                flex-grow: 1;
+                h1 {
+                    font-size: 2em;
+                }
+                p {
+                    color: rgba($negro1, 0.5);
+                }
+            }
+            .icono {
+                width: fit-content;
+                i {
+                    font-size: 1.6em;
+                    color: rgba($negro1, 0.5);
+                }
+            }
+        }
+        #data {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba($negro1, 0.2);
+            
+            span {
+                flex-basis: 60%;
+                color: rgba($negro1, 0.5);
+            }
+            p {
+                width: fit-content;
+                font-weight: bolder;
+            }
+        }
+        #dates {
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba($negro1, 0.2);
+
+            > * {
+                width: fit-content;
+                h2 {
+                    color: rgba($negro1, 0.5);
+                }
+                p {
+                    font-size: 1.4em;
+                    font-weight: bolder;
+                }
+            }
+            .icono {
+                i {
+                    color:rgba($negro1, 0.2);
+                }
+            }
+            #depart {
+                h2{
+                    text-align: end;
+                }
+            }
+        }
+        #prices {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            > span {
+                flex-basis: 60%;
+                color: rgba($negro1, 0.5);
+            }
+            p {
+                width: fit-content;
+                font-weight: bolder;
+            }
+            .total {
+                margin-top: 40px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                
+                h3 {
+                    flex-basis: 60%;
+                    font-size: 2em;
+                }
+                > span {
+                    width: fit-content;
+                    font-size: 2em;
+                    color: $verde-claro2;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}

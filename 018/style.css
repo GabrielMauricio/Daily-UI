@@ -1,0 +1,6 @@
+.not-allowed {
+    cursor: not-allowed;
+}
+.not-allowed:hover {
+    background-color: inherit;
+}

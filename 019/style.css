@@ -1,0 +1,6 @@
+#todo {
+    background-image: url("./background.jpg");
+}
+#contenedor {
+    height: calc(100vh - 8rem);
+}

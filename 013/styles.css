@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, Times, serif;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span, img, input, a, button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: #0652dd;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #dff9fb;
+}
+
+#todo {
+  width: 70%;
+  margin: 0 auto;
+  color: #130f40;
+}
+#todo p::selection, #todo textarea::selection, #todo span::selection, #todo h1::selection, #todo h2::selection, #todo label::selection {
+  background-color: #f368e0;
+  color: #f5f6fa;
+}
+#todo #header {
+  background-color: #1e272e;
+  padding-left: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  height: 50px;
+}
+#todo #header hgroup {
+  color: #f368e0;
+  flex-basis: 30%;
+  display: flex;
+}
+#todo #header hgroup .icono {
+  width: fit-content;
+  height: 50px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+#todo #header hgroup .icono i {
+  font-size: 2em;
+}
+#todo #header hgroup h1 {
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 1.6em;
+  padding-left: 5px;
+  width: fit-content;
+}
+#todo #header nav {
+  flex-basis: 70%;
+}
+#todo #header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+#todo #header nav ul li {
+  width: fit-content;
+}
+#todo #header nav ul li a {
+  color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 50px;
+}
+#todo #header nav ul li a:hover {
+  border-top: 5px solid #f368e0;
+}
+#todo #titulos {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+}
+#todo #titulos h2 {
+  font-size: 1.3em;
+  width: fit-content;
+}
+#todo #titulos button {
+  background-color: #f368e0;
+  color: #f5f6fa;
+  font-weight: bold;
+  width: fit-content;
+  height: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+#todo #titulos button:hover {
+  opacity: 0.8;
+}
+#todo #container {
+  display: flex;
+}
+#todo #container #contactos {
+  background-color: #dcdde1;
+  flex-basis: 300px;
+}
+#todo #container #contactos .contacto {
+  border: 1px solid rgba(47, 53, 66, 0.1);
+  border-left: none;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+#todo #container #contactos .contacto figure {
+  margin-right: 10px;
+  width: fit-content;
+}
+#todo #container #contactos .contacto figure img {
+  width: 35px;
+}
+#todo #container #contactos .contacto .texto P {
+  color: rgba(19, 15, 64, 0.6);
+  width: fit-content;
+  border-bottom: 1px dotted rgba(19, 15, 64, 0.6);
+  font-size: 0.8em;
+}
+#todo #container #contactos .contacto.oculto {
+  display: none;
+}
+#todo #container #contactos .contacto:nth-of-type(1) {
+  background-color: #f1f2f6;
+  border: none;
+}
+#todo #container #contactos button {
+  background-color: #dcdde1;
+  color: #130f40;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 0.9em;
+  border: 1px solid rgba(47, 53, 66, 0.1);
+}
+#todo #container #contactos button:hover {
+  opacity: 0.5;
+}
+#todo #container #chat {
+  background-color: #f1f2f6;
+  flex-grow: 1;
+  padding: 20px 30px;
+}
+#todo #container #chat form {
+  margin-bottom: 15px;
+}
+#todo #container #chat form label textarea {
+  color: #130f40;
+  resize: none;
+  margin: 10px 0;
+  height: 130px;
+  padding: 4px;
+  border: none;
+}
+#todo #container #chat form label textarea:focus {
+  outline: 1px solid #f368e0;
+}
+#todo #container #chat form label textarea:focus::placeholder {
+  color: #f368e0;
+}
+#todo #container #chat form label textarea::placeholder {
+  color: #130f40;
+}
+#todo #container #chat form .contenedorEnviar {
+  display: flex;
+}
+#todo #container #chat form .contenedorEnviar input[type=submit] {
+  background-color: #f368e0;
+  color: #f5f6fa;
+  flex-basis: 120px;
+  max-width: 120px;
+  height: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#todo #container #chat form .contenedorEnviar input[type=submit]:hover {
+  opacity: 0.8;
+}
+#todo #container #chat form .contenedorEnviar span {
+  height: 30px;
+  padding-left: 10px;
+  font-size: 0.8em;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+#todo #container #chat #mensajes {
+  font-size: 0.8em;
+  display: grid;
+  gap: 15px;
+}
+#todo #container #chat #mensajes > * {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#todo #container #chat #mensajes > * p {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+#todo #container #chat #mensajes > * span {
+  color: rgba(19, 15, 64, 0.6);
+  width: fit-content;
+  font-size: 0.8em;
+  border-bottom: 1px dotted rgba(19, 15, 64, 0.6);
+  cursor: default;
+}
+#todo #container #chat #mensajes > * span.icono {
+  cursor: pointer;
+  border: none;
+}
+#todo #container #chat #mensajes > * span.icono:hover {
+  color: #f368e0;
+}
+#todo #container #chat #mensajes .recibido {
+  background-color: #dcdde1;
+  justify-self: flex-start;
+}
+#todo #container #chat #mensajes .enviado {
+  background-color: white;
+  justify-self: flex-end;
+}
+
+/*# sourceMappingURL=styles.css.map */

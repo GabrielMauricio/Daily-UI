@@ -1,0 +1,184 @@
+$azul-fondo: rgba(112, 161, 255,1.0);
+$azul-formulario: rgba(30, 144, 255,1.0);
+$color-blanco: rgba(241, 242, 246,1.0);
+$color-gris: rgba(87, 96, 111,1.0);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a, img, span {
+    display: block;
+}
+
+body {
+    background-color: $azul-fondo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#principal {
+    width: 95%;
+    height: fit-content;
+    background-color: $color-blanco;
+    margin-top: 10px;
+    padding: 50px;
+    background-color: $color-blanco;
+    background-image: url("./background2.jpg");
+    background-size: cover;
+
+    header {
+        display: flex;
+
+        h1 {
+            color: $azul-fondo;
+            cursor: pointer;
+            i {
+                font-size: 1.4em;
+                margin-right: 10px;
+            }
+            &:hover {
+                color: $azul-formulario;
+            }
+        }
+        nav {
+            font-size: 0.8em;
+            margin-left: 20px;
+            display: flex;
+            width: 38%;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                height: 100%;
+                flex-grow: 1;
+
+                a {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgba($color-gris, 0.5);
+                    border-bottom: 1px solid rgba($color-gris, 0.5);
+
+                    &.active {
+                        color: $azul-formulario;
+                        border-bottom: 2px solid $azul-formulario;
+                    }
+                }
+            }
+        }
+    }
+
+    #contenedor {
+        height: calc(100% - 1.4em);
+        display: flex;
+
+        /* > * {
+            flex-grow: 1;
+        } */
+        #imagen {
+            flex-basis: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        #formulario {
+            padding-top: 40px;
+            flex-basis: 40%;
+
+            h2 {
+                color: $color-gris;
+            }
+            .blanquita {
+                background-color: $color-blanco;
+                padding: 20px;
+                margin: 30px auto;
+                
+                label {
+                    position: relative;
+                    span {
+                        color: $color-gris;
+                        font-size: 0.8em;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        &:hover {
+                            color: $azul-formulario;
+                        }
+                    }
+                    i {
+                        color: $azul-fondo;
+                        font-size: 1em;
+                        position: absolute;
+                        top: 47px;
+                        cursor: pointer;
+                        &:hover {
+                            color: $azul-formulario;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        padding: 5px;
+                        border: none;
+                        border-bottom: 1px solid $color-gris;
+                        outline: none;
+                        background-color: $color-blanco;
+                        margin-bottom: 40px;
+                        padding-left: 24px;
+
+                        &[type="number"] {
+                            appearance: textfield;
+                        }
+                    }
+                }
+                .caja {
+                    display: flex;
+                    justify-content: space-between;
+                    label {
+                        flex-basis: 40%;
+
+                        i {
+                            top: 30px;
+                        }
+                        input {
+                            width: 100%;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            #payment span {
+                display: inline-block;
+                font-weight: bolder;
+            }
+            input[type="submit"] {
+                border: none;
+                width: 100%;
+                padding: 20px;
+                background-color: $azul-fondo;
+                margin-top: 20px;
+                color: $color-blanco;
+                border-radius: 8px;
+                font-size: 1em;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $azul-formulario;
+                }
+            }
+        }
+    }
+}

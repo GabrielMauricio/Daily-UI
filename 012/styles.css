@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, Times, serif;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span, img, input, a, button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: #0652dd;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #dff9fb;
+  color: #1b1464;
+}
+
+img {
+  object-fit: cover;
+}
+
+#todo {
+  width: 60%;
+  min-width: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#todo #header {
+  flex-basis: 35%;
+  height: 10vh;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#todo #header hgroup {
+  display: flex;
+  padding: 10px 0;
+  width: fit-content;
+}
+#todo #header hgroup .icono {
+  width: fit-content;
+}
+#todo #header hgroup .icono i {
+  font-size: 2em;
+}
+#todo #header hgroup h1 {
+  font-size: 1.8em;
+  margin-left: 10px;
+  font-weight: lighter;
+  font-style: italic;
+}
+#todo #nav {
+  flex-basis: 65%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+#todo #nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+#todo #nav ul li {
+  width: fit-content;
+}
+#todo #nav ul li a {
+  padding: 15px 10px;
+  color: dodgerblue;
+  text-align: center;
+}
+#todo #nav ul li a:hover {
+  color: #f5f6fa;
+  background-color: #1e272e;
+}
+#todo #articles {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+#todo #articles article {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#todo #articles article figure {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1343px) {
+  #todo {
+    width: 80%;
+  }
+}
+@media (max-width: 1088px) {
+  #todo {
+    width: 100%;
+  }
+  #todo #header {
+    flex-basis: 28%;
+  }
+  #todo #header hgroup .icono i {
+    font-size: 1.6em;
+  }
+  #todo #header hgroup h1 {
+    font-size: 1.5em;
+  }
+  #todo #nav {
+    flex-basis: 72%;
+  }
+}
+@media (max-width: 818px) {
+  #todo #header {
+    flex-basis: 100%;
+    justify-content: center;
+    height: fit-content;
+  }
+  #todo #nav {
+    flex-basis: 100%;
+  }
+  #todo #nav ul li a {
+    font-size: 0.9em;
+  }
+  #todo #articles article h2, #todo #articles article p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 550px) {
+  #todo #nav {
+    height: auto;
+  }
+  #todo #nav ul {
+    flex-wrap: wrap;
+  }
+  #todo #nav ul li {
+    flex-basis: 100%;
+  }
+  #todo #nav ul li a {
+    border-bottom: 1px solid #f368e0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

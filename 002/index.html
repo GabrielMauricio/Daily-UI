@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/38aaed2a92.js" crossorigin="anonymous"></script>
+    <title>002</title>
+</head>
+<body>
+    <section id="principal">
+        <header>
+            <h1><i class="fas fa-hand-holding-usd"></i>PayMe</h1>
+            <nav>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Invento elige</a></li>
+                <li><a href="" class="active">Deleni commo</a></li>
+            </nav>
+        </header>
+        <div id="contenedor">
+            <div id="imagen">
+                <img src="tarjeta.jpg" alt="">
+            </div>
+            <form action="" id="formulario">
+                <h2>Payment Details</h2>
+
+                <div class="blanquita">
+                    <label for="name">
+                        <span>Cardholder Name</span>
+                        <i class="far fa-user"></i>
+                        <input type="text" id="name" name="name">
+                    </label>
+                    <label for="number">
+                        <span>Card Number</span>
+                        <i class="far fa-credit-card"></i>
+                        <input type="number" name="number" id="number">
+                    </label>
+                    <div class="caja">
+                        <label for="expiration">
+                            <span>Expiration</span>
+                            <i class="far fa-calendar-alt"></i>
+                            <input type="date" name="expiration" id="expiration">
+                        </label>
+                        <label for="ccv">
+                            <span>CCV/CVC</span>
+                            <i class="fas fa-unlock-alt"></i>
+                            <input type="number" name="ccv" id="ccv">
+                        </label>
+                    </div>
+                </div>
+                <p id="payment">Payment amount: <span>$150</span></p>
+                <input type="submit" value="Pay">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

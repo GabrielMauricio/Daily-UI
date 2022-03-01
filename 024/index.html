@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/38aaed2a92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>024</title>
+
+</head>
+<body>
+    <section id="todo" class="w-full h-screen bg-sky-200 flex justify-center items-center">
+        <div id="ticket" class="w-2xl max-w-2xl h-60 rounded-2xl flex relative">
+
+            <div class="izq basis-[66.66%] h-full rounded-l-2xl">
+                
+                <header class="h-1/5 bg-blue-500 rounded-tl-2xl flex justify-end items-center p-2 text-white">
+                    <div class="icono absolute top-6 left-7 text-5xl -rotate-90 text-black">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <span class="mr-4 text-sm">BOARDING PASS</span>
+                    <h1 class="text-2xl">GABITO AIRLINES</h1>
+                </header>
+
+                <section class="principal h-[70%] grid grid-cols-4 text-sm bg-slate-200">
+                    <figure class="QR flex justify-center items-center">
+                        <img src="./qr-code.png" alt="QR code" class="w-4/5 mt-8">
+                    </figure>
+                    <div class="col1 flex flex-col justify-evenly">
+                        <p>NAME:</p>
+                        <p>FROM:</p>
+                        <p>FLIGHT:</p>
+                        <p>GATE:</p>
+                    </div>
+                    <div class="col2 flex flex-col justify-evenly pt-10">
+                        <p>TO:</p>
+                        <p>DATE:</p>
+                        <p>BOARDING TIME:</p>
+                    </div>
+                    <div class="col3 flex items-center pt-10">
+                        <p>SEAT:</p>
+                    </div>
+                </section>
+
+                <footer class="h-[10%] px-2 flex justify-end items-center bg-blue-500 rounded-bl-2xl text-white">
+                    <span class="text-sm">ENJOY YOUR LSD</span>
+                </footer>
+            </div>
+
+            <div class="der basis-[33.33%] h-full border-l-2 border-dashed border-gray-800 rounded-r-2xl">
+
+                <header class="h-1/5 bg-blue-500 rounded-tr-2xl p-2 flex justify-between items-center text-white">
+                    <h2 class="text-sm">BOARDING PASS</h2>
+                    <div class="icono text-2xl">
+                        <i class="fa-solid fa-jet-fighter"></i>
+                    </div>
+                </header>
+
+                <section class="principal h-[70%] p-2 grid grid-cols-3 text-sm bg-slate-200">
+                    <div class="col1 flex flex-col justify-evenly">
+                        <p>NAME:</p>
+                        <p>FROM:</p>
+                        <p>TO:</p>
+                        <p>DATE:</p>
+                        <p>SEAT:</p>
+                    </div>
+                    <div class="col2 flex flex-col justify-between pt-24 pb-2">
+                        <p>TIME:</p>
+                        <p>GATE:</p>
+                    </div>
+                    <div class="col3 flex items-end pb-2">
+                        <p>FLIGHT:</p>
+                    </div>
+                </section>
+                <footer class="h-[10%] bg-blue-500 rounded-br-2xl">
+
+                </footer>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+#portada {
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#portada h1 {
+    font-family: 'Quintessential', cursive;
+}
+#signIn h2, #signUp h2 {
+    font-family: 'Quintessential', cursive;
+}
+#signIn label.active, #signUp label.active {
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    transform: translateY(-25px);
+    font-size: 0.8em;
+}
+#signIn label.valido, #signUp label.valido {
+    color:rgb(16, 190, 0);
+}
+#signIn label.invalido, #signUp label.invalido {
+    color: red;
+}
+#signIn input.valido, #signUp input.valido {
+    border-bottom: 2px solid rgb(16, 190, 0);
+}
+#signIn input.invalido, #signUp input.invalido {
+    border-bottom: 2px solid red;
+}
+#dentro section h2 {
+    font-family: 'Quintessential', cursive;
+}
+
+.oculto {
+    display: none;
+}

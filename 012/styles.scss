@@ -1,0 +1,157 @@
+@use "../partials" as *;
+
+* {
+    font-family: $fuenteMontserrat;
+    font-size: 16px;
+}
+body {
+    background-color: $blanco-celeste;
+    color: $azul-profundo;
+}
+img {
+    object-fit: cover;
+}
+#todo {
+    width: 60%;
+    min-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    #header {
+        flex-basis: 35%;
+        height: 10vh;
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        hgroup {
+            display: flex;
+            padding: 10px 0;
+            width: fit-content;
+            .icono {
+                width: fit-content;
+                i {
+                    font-size: 2em;
+                }
+            }
+            h1 {
+                font-size: 1.8em;
+                margin-left: 10px;
+                font-weight: lighter;
+                font-style: italic;
+            }
+        }
+    }
+
+    #nav {
+        flex-basis: 65%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            li {
+                width: fit-content;
+                a {
+                    padding: 15px 10px;
+                    color: $azul-cielo;
+                    text-align: center;
+                    &:hover {
+                        color: $blanco1;
+                        background-color: $negro4;
+                    }
+                }
+            }
+        }
+    }
+    #articles {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+        
+        article {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            figure {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1343px) {
+    #todo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1088px) {
+    #todo {
+        width: 100%;
+        #header {
+            flex-basis: 28%;
+            hgroup {
+                .icono {
+                    i {
+                        font-size: 1.6em;
+                    }
+                }
+                h1 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+        #nav {
+            flex-basis: 72%;
+        }
+    }
+}
+@media (max-width: 818px) {
+    #todo {
+        #header {
+            flex-basis: 100%;
+            justify-content: center;
+            height: fit-content;
+        }
+        #nav {
+            flex-basis: 100%;
+            ul {
+                li {
+                    a {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+        #articles {
+            article {
+                h2, p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    #todo {
+        #nav {
+            height: auto;
+            ul {
+                flex-wrap: wrap;
+                li {
+                    flex-basis: 100%;
+                    a {
+                        border-bottom: 1px solid $rosa-maraco;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+img {
+    height: auto;
+    object-fit: cover;
+}
+.menu {
+    transform: translatex(-100%);
+    transition: all 0.3s ease-in-out;
+}
+.menu.active {
+    transform: translateX(0);
+}
+
+header h1, .menu footer div h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+#portada {
+    height: 650px;
+}
+#portada button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#categorias {
+
+}
+#categorias .article .visor, #categorias .article h2 {
+    width: 1650px;
+}
+.contenedorFotos {
+    width: 4950px;
+    transition: all 0.5s ease-in-out;
+}
+.contenedorFotos .figureFoto {
+    width: 330px;
+    background-color: aqua;
+    height: 170px;
+}
+.contenedorFotos .figureFoto img {
+    width: 330px;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.contenedorFotos .figureFoto img.encima {
+    width: 380px;
+    height: 220px;
+    transform: translate(-25px, -25px);
+}
+.contenedorFotos .figureFoto img.foto {
+    object-position: bottom;
+}

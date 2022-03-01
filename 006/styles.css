@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+body {
+  background-color: #dff9fb;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+span, a, input, button {
+  display: block;
+}
+
+#todo {
+  padding: 20px;
+  background-color: #dff9fb;
+  color: #130f40;
+  height: 100vh;
+}
+
+#todo #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 35vh;
+  border-bottom: 1px solid rgba(19, 15, 64, 0.1);
+}
+
+#todo #header .iconoIzq, #todo #header .iconoDer {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+#todo #header .iconoIzq i, #todo #header .iconoDer i {
+  font-size: 1.6em;
+}
+
+#todo #header .iconoIzq i:hover, #todo #header .iconoDer i:hover {
+  color: #6ab04c;
+}
+
+#todo #header .iconoIzq {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#todo #header .iconoDer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#todo #header .centro {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#todo #header .centro figure {
+  width: 100px;
+}
+
+#todo #header .centro figure img {
+  height: 100px;
+  border-radius: 100px;
+  border: 4px solid #6ab04c;
+  cursor: pointer;
+}
+
+#todo #header .centro h1 {
+  margin-top: 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #6ab04c;
+}
+
+#todo #header .centro h2 {
+  font-size: 0.9em;
+  font-style: italic;
+  color: rgba(19, 15, 64, 0.4);
+}
+
+#todo #header .centro h3 {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+#todo #header .centro button {
+  background-color: #6ab04c;
+  color: #dff9fb;
+  border: none;
+  height: 30px;
+  outline: none;
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#todo #header .centro button:hover {
+  background-color: #badc58;
+}
+
+#todo #numeros {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(19, 15, 64, 0.1);
+}
+
+#todo #numeros div {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#todo #numeros div span {
+  font-size: 2.5em;
+  color: #6ab04c;
+}
+
+#todo #numeros div p {
+  font-size: 1.5em;
+}
+
+#todo #info {
+  padding: 10px 0;
+  height: 22vh;
+  border-bottom: 1px solid rgba(19, 15, 64, 0.1);
+}
+
+#todo #info h2 {
+  font-size: 1.2em;
+  margin-bottom: 4px;
+  color: #6ab04c;
+}
+
+#todo #info p {
+  font-size: 0.9em;
+}
+
+#todo #info a {
+  margin-top: 8px;
+  color: #badc58;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#todo #info a:hover {
+  color: #6ab04c;
+}
+
+#todo #redes {
+  height: calc(28vh - 40px);
+  padding: 10px 0;
+}
+
+#todo #redes h2 {
+  font-size: 1.2em;
+  margin-bottom: 4px;
+  color: #6ab04c;
+}
+
+#todo #redes .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#todo #redes .iconos span {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(19, 15, 64, 0.2);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#todo #redes .iconos span:hover {
+  background-color: #130f40;
+}
+
+#todo #redes .iconos span i {
+  font-size: 1.2em;
+  color: #dff9fb;
+}
+
+@media (orientation: landscape) {
+  #todo {
+    display: -ms-grid;
+    display: grid;
+    padding: 4px;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 'cabecera cabecera cabecera info info' 'cabecera cabecera cabecera info info' 'cabecera cabecera cabecera info info' 'cabecera cabecera cabecera info info' 'numeros numeros numeros redes redes';
+  }
+  #todo #header, #todo #numeros, #todo #info, #todo #redes {
+    height: auto;
+    padding: 6px;
+  }
+  #todo #header {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: cabecera;
+  }
+  #todo #header .iconoIzq {
+    -ms-flex-preferred-size: 5%;
+        flex-basis: 5%;
+  }
+  #todo #header .iconoDer {
+    -ms-flex-preferred-size: 5%;
+        flex-basis: 5%;
+  }
+  #todo #header .centro {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+  #todo #numeros {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: numeros;
+  }
+  #todo #numeros div span {
+    font-size: 2em;
+  }
+  #todo #numeros div p {
+    font-size: 1em;
+  }
+  #todo #info {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: info;
+  }
+  #todo #info h2 {
+    font-size: 1.5em;
+  }
+  #todo #info p {
+    font-size: 1em;
+  }
+  #todo #redes {
+    -ms-grid-row: 5;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: redes;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

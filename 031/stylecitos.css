@@ -1,0 +1,7 @@
+#todo .contenedorPrincipal #abajo #formPart nav ul li a {
+    bottom: -2px;
+}
+#todo .contenedorPrincipal #abajo #formPart nav ul li a.active {
+    border-bottom: 2px solid rgb(14 165 233);
+    color: rgb(23 23 23);
+}

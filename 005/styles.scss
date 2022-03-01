@@ -1,0 +1,277 @@
+$azul-fondo: rgba(19, 15, 64,1.0);
+$verde-fuentes: rgba(46, 213, 115,1.0);
+$blanco: rgba(241, 242, 246,1.0);
+$negro: rgba(47, 53, 66,1.0);
+$naranjo: rgba(255, 165, 2,1.0);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+span, img, a, i, input {
+    display: block;
+}
+img {
+    object-fit: cover;
+}
+body {
+    background-color: steelblue;
+}
+
+#todo {
+    width: 100vw;
+
+    .capa {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: rgba($negro, 0.8);
+        z-index: 1;
+        display: none;
+    }
+    #header {
+        display: flex;
+        height: 6vh;
+        background-color: $azul-fondo;
+        color: $blanco;
+        position: sticky;
+        top: 0;
+
+        > * {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #iconoMenu {
+            flex-basis: 20%;
+        }
+        h1, input[type="search"] {
+            flex-basis: 65%;
+            justify-content: flex-start;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+        input[type="search"] {
+            flex-basis: 80%;
+            padding: 10px;
+            font-size: 1em;
+            background-color: $azul-fondo;
+            color: $blanco;
+            border: none;
+            outline: none;
+        }
+        #iconoSearch {
+            flex-basis: 15%;
+            justify-self: flex-end;
+        }
+        i {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    }
+
+    #menu {
+        width: 80%;
+        height: 100vh;
+        background-color: rgba($blanco, 0.6);
+        position: absolute;
+        top: 0;
+        transform: translateX(-80vw);
+        z-index: 2;
+
+        #headerMenu {
+            width: 100%;
+            height: 18vh;
+            background-color: $azul-fondo;
+            padding: 10px;
+            color: $blanco;
+
+            .imagenesMenu {
+                display: flex;
+                justify-content: space-between;
+                figure {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 100px;
+                        cursor: pointer;
+                    }
+                }
+                .solMenu {
+                    i {
+                        font-size: 1.5em;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .infoMenu {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                hgroup {
+                    h3 {
+                        font-weight: lighter;
+                        font-size: 0.8em;
+                        color: rgba($blanco, 0.8);
+                    }
+                }
+                .flechaMenu {
+                    i {
+                        font-size: 1.5em;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        #opcionesMenu {
+            background-color: $naranjo;
+            height: 82vh;
+            color: $blanco;
+            background-color: rgba($azul-fondo, 0.9);
+            article {
+                display: flex;
+                height: 8vh;
+                cursor: pointer;
+                transition: none;
+                &:hover {
+                    background-color: rgba($azul-fondo, 0.9);
+                }
+                .iconoOpcion {
+                    flex-basis: 18%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i {
+                        font-size: 1.2em;
+                        color: rgba($blanco, 0.4);
+                    }
+                }
+                p {
+                    flex-basis: 82%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+    #chats {
+        color: $blanco;
+        background-color: rgba($azul-fondo, 0.9);
+        article {
+            display: flex;
+            height: 70px;
+            cursor: pointer;
+            transition: none;
+            &:hover {
+                background-color: rgba($azul-fondo, 0.9);
+            }
+
+            figure {
+                flex-basis: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                }
+            }
+            .info {
+                border-bottom: 2px solid $negro;
+                flex-basis: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 8px;
+
+                hgroup {
+                    h2 {
+                        font-size: 1.2em;
+                    }
+                    h3 {
+                        font-weight: lighter;
+                        font-size: 1em;
+                    }
+                }
+                p {
+                    font-size: 0.8em;
+                }
+
+                &:nth-of-child(1) {
+                    color: $verde-fuentes;
+                }
+            }
+            &:nth-of-type(3n) h3{
+                color: $verde-fuentes;
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    #todo {
+        #header {
+            height: 15vh;
+
+            #iconoMenu {
+                flex-basis: 10%;
+            }
+            h1 {
+                flex-basis: 80%;
+            }
+            input[type="search"] {
+            flex-basis: 90%;
+            }
+            #iconoSearch {
+                flex-basis: 10%;
+            }
+        }
+
+        #menu {
+            width: 40%;
+            height: 100vh;
+            overflow-y: scroll !important;
+            #headerMenu {
+                height: 40vh;
+                
+            }
+            #opcionesMenu {
+                height: 60vh;
+                overflow: scroll !important;
+                article {
+                    height: 15vh;
+                }
+            }
+        }
+
+        #chats {
+            article {
+                figure {
+                    flex-basis: 10vw;
+                }
+                .info {
+                    flex-basis: 90%;
+                }
+            }
+        }
+    }
+    
+}

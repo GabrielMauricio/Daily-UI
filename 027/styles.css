@@ -1,0 +1,32 @@
+nav {
+    position: relative;
+}
+.liAfuera {
+    position: relative;
+}
+.liAfuera ul {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: aqua;
+    transition: height 0.5s ease-in-out;
+}
+.liAfuera:nth-of-type(1) ul {
+    left: -16px;
+}
+.liAfuera:last-of-type ul {
+    right: -16px;
+    left: auto;
+}
+.liAfuera:hover ul {
+    color: white;
+}
+.liAfuera ul li a {
+    background-color: black;
+    min-width: 140px;
+}
+.liAfuera ul li a:hover {
+
+}

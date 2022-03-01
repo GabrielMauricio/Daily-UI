@@ -1,0 +1,123 @@
+@use "../partials" as *;
+* {
+    font-family: $fuenteMontserrat;
+    font-size: 16px;
+}
+
+#todo {
+    background-color: $blanco-oscuro1;
+    color: $negro3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    #header {
+        color: $verde-claro2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        h1 {
+            width: fit-content;
+            font-size: 3em;
+        }
+    }
+
+    #timer {
+        height: calc(100vh - 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            p {
+                flex-basis: 100%;
+                text-align: center;
+
+            }
+            label {
+                flex-basis: 30%;
+                text-align: center;
+                input {
+                    background-color: $blanco1;
+                    color: $verde-claro2;
+                    margin-top: 10px;
+                    padding: 5px;
+                    &:out-of-range {
+                        color: $rojo-fuerte;
+                    }
+                }
+            }
+            input[type="submit"] {
+                background-color: $verde-claro2;
+                color: $blanco1;
+                width: 30%;
+                cursor: pointer;
+                height: 40px;
+                &:hover {
+                    opacity: 0.8;
+                }
+                &.denegado {
+                    background-color: $rojo-fuerte;
+                }
+            }
+            #advertencia {
+                font-size: 1.2em;
+            }
+        }
+        
+
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            
+            > * {
+                width: fit-content;
+            }
+            article {
+                display: flex;
+                padding: 10px;
+                span {
+                    font-size: 2em;
+                    width: 22px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .dosPuntos {
+                span {
+                    font-size: 2em;
+                }
+            }
+            &.oculto {
+                display: none;
+            }
+
+            #tiempoFinalizado {
+                flex-basis:100%;
+                margin-top: 10px;
+                text-align: center;
+            }
+            button[type="button"] {
+                background-color: $verde-claro2;
+                color: $blanco1;
+                margin-top: 20px;
+                width: 30%;
+                height: 40px;
+                cursor: pointer;
+
+            }
+        }
+    }
+}

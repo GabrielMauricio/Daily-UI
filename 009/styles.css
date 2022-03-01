@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, Times, serif;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span, img, input, a, button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0652dd;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+#todo {
+  background-color: #1e272e;
+  color: #f5f6fa;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  padding: 15px;
+}
+#todo #header {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: flex;
+}
+#todo #header .icon {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+#todo #header .icon i {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+#todo #header hgroup {
+  flex-grow: 1;
+  text-align: center;
+}
+#todo #header hgroup h2 {
+  font-size: 1.2em;
+}
+#todo #header hgroup h3 {
+  font-size: 0.8em;
+}
+#todo #image {
+  margin-bottom: 20px;
+}
+#todo #image figure {
+  width: 80%;
+  margin: 0 auto;
+}
+#todo #image figure img {
+  height: 250px;
+  object-fit: cover;
+}
+#todo #titles {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#todo #titles hgroup h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#todo #barra {
+  display: flex;
+  margin: 30px 0;
+}
+#todo #barra p {
+  width: fit-content;
+  font-size: 0.8em;
+}
+#todo #barra .progress {
+  flex-grow: 1;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+#todo #barra .progress progress {
+  background-color: rgba(245, 246, 250, 0.6);
+  border: none;
+  height: 4px;
+}
+#todo #barra .progress progress::-moz-progress-bar {
+  background-color: #f5f6fa;
+}
+#todo #buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#todo #buttons span {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#todo #buttons span i {
+  font-size: 1.5em;
+  color: rgba(245, 246, 250, 0.8);
+  cursor: pointer;
+}
+#todo #buttons span i:hover {
+  color: #f5f6fa;
+}
+#todo #buttons span:nth-of-type(3) {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border: 2px solid rgba(245, 246, 250, 0.6);
+}
+#todo #buttons span:nth-of-type(3) i {
+  font-size: 2.5em;
+  width: fit-content;
+  color: #f5f6fa;
+}
+
+@media (orientation: landscape) {
+  #todo {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #todo #header, #todo #image, #todo #titles, #todo #barra, #todo #buttons {
+    margin: 0;
+  }
+  #todo #header {
+    flex-basis: 100%;
+  }
+  #todo #header hgroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: center;
+  }
+  #todo #image {
+    flex-basis: 30%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #todo #image figure {
+    width: 90%;
+    margin: 0;
+    display: flex;
+  }
+  #todo #image figure img {
+    height: auto;
+  }
+  #todo #titles {
+    flex-basis: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #todo #titles hgroup {
+    width: fit-content;
+    margin-left: 20px;
+  }
+  #todo #titles hgroup h1 {
+    font-size: 2.5em;
+  }
+  #todo #titles hgroup h2 {
+    font-size: 1.5em;
+  }
+  #todo #barra {
+    align-items: center;
+  }
+  #todo #barra .progress {
+    height: fit-content;
+  }
+  #todo #buttons {
+    width: 70%;
+  }
+  #todo #buttons span i {
+    font-size: 1.3em;
+  }
+  #todo #buttons span:nth-of-type(3) {
+    width: 60px;
+    height: 60px;
+  }
+  #todo #buttons span:nth-of-type(3) i {
+    font-size: 1.6em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

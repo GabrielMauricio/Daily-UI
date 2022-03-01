@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quintessential&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38aaed2a92.js" crossorigin="anonymous"></script>
+    <title>020</title>
+</head>
+<body class="transition-all">
+    <section id="todo">
+
+        <section id="portada" class="bg-slate-300 w-full h-screen flex flex-wrap justify-center content-evenly p-4">
+            <h1 class="w-full text-4xl text-center text-blue-500 font-bold mb-10">Corporis quam</h1>
+            <div class="icono bg text-8xl mb-6"><i class="fas fa-search-location text-blue-500"></i></div>
+            <p class="text-center text-sm mb-10 w-full">Quaerat voluptatum ut tempore similique vel cumque omnis</p>
+            <form action="" class="flex flex-wrap w-1/2 justify-center">
+                <button type="button" id="portadaSignIn" class="signIn w-full h-10 bg-red-600 mb-10 text-gray-300 font-bold hover:text-gray-50 hover:bg-red-500">SIGN IN</button>
+                <button type="button" id="portadaSignUp" class="signUp w-full h-10 bg-red-600 text-gray-300 font-bold hover:text-gray-50 hover:bg-red-500">SIGN UP</button>
+            </form>
+        </section>
+
+
+        <section id="signIn" class="oculto bg-slate-300 w-full h-screen flex flex-wrap justify-center content-evenly">
+            <div class="flechaAtras w-6 h-6 flex justify-center items-center absolute top-2 left-2 rounded-full hover:bg-red-500 text-gray-500 hover:text-gray-50 hover:cursor-pointer"><i class="fas fa-arrow-left text-lg"></i></div>
+            <h2 class="w-full text-center text-3xl text-red-600 font-bold">Sign in</h2>
+            <form action="" class="w-[80%]">
+                <div class="contenedor mb-10 bg-blue-500 relative">
+                    <label for="usernameSignIn" class="w-fit absolute top-1 left-1 text-gray-500">Username
+                    </label>
+                    <input type="text" name="usernameSignIn" id="usernameSignIn" required class="w-full p-1 border-b-2 border-solid border-gray-400 outline-none">
+                </div>
+                <div class="contenedor mb-10 bg-blue-500 relative">
+                    <label for="passwordSignIn" class="w-fit absolute top-1 left-1 text-gray-500">Password
+                    </label>
+                    <input type="password" name="passwordSignIn" id="passwordSignIn" required class="w-full p-1 border-b-2 border-solid border-gray-400 outline-none">
+                </div>
+                <div class="contenedor w-full flex justify-center">
+                    <input type="submit" value="SIGN IN" class="w-1/2 bg-red-600 hover:bg-red-500 hover:text-gray-50 hover:cursor-pointer m-auto h-10 text-gray-300 font-bold">
+                </div>
+            </form>
+        </section>
+
+
+        <section id="signUp" class="oculto bg-slate-300 w-full h-screen flex flex-wrap justify-center content-evenly">
+            <div class="flechaAtras w-6 h-6 flex justify-center items-center absolute top-2 left-2 rounded-full hover:bg-red-500 text-gray-500 hover:text-gray-50 hover:cursor-pointer">
+                <i class="fas fa-arrow-left text-lg"></i>
+            </div>
+            <h2 class="w-full text-center text-3xl text-red-600 font-bold">Sign Up</h2>
+            <form action="" class="w-[80%] flex flex-wrap justify-center">
+                <div class="contenedor w-full mb-10 bg-blue-500 relative">
+                    <label for="usernameSignUp" class="w-fit absolute top-1 left-1 text-gray-500">Name</label>
+                    <input type="text" name="usernameSignUp" id="usernameSignUp" required class="w-full p-1 border-b-2 border-solid border-gray-400 outline-none">
+                </div>
+                <div class="contenedor w-full mb-10 bg-blue-500 relative">
+                    <label for="emailSignUp" class="w-fit absolute top-1 left-1 text-gray-500">Email</label>
+                    <input type="email" name="emailSignUp" id="emailSignUp" required class="w-full p-1 border-b-2 border-solid border-gray-400 outline-none">
+                </div>
+                <div class="contenedor w-full mb-10 bg-blue-500 relative">
+                    <label for="passwordSignUp" class="w-fit absolute top-1 left-1 text-gray-500">Password</label>
+                    <input type="password" name="passwordSignUp" id="passwordSignUp" required class="w-full p-1 border-b-2 border-solid border-gray-400 outline-none">
+                </div>
+                <div class="contenedor w-full mb-10 bg-blue-500 relative">
+                    <label for="passwordConfirmationSignUp" class="w-fit absolute top-1 left-1 text-gray-500">Password Confirmation</label>
+                    <input type="password" name="passwordConfirmationSignUp" id="passwordConfirmationSignUp" required class="w-full p-1 border-b-2 border-solid border-gray-400 outline-none">
+                </div>
+                <div class="contenedor w-full mb-10 bg-blue-500 relative">
+                    <label for="parentsEmailSignUp" class="w-fit absolute top-1 left-1 text-gray-500">Parent's email (for child)</label>
+                    <input type="email" name="parentsEmailSignUp" id="parentsEmailSignUp" required class="w-full p-1 border-b-2 border-solid border-gray-400 outline-none">
+                </div>
+                <input type="submit" value="SIGN UP" class="w-1/2 bg-red-600 hover:bg-red-500 hover:text-gray-50 hover:cursor-pointer m-auto h-10 text-gray-300 font-bold">
+            </form>
+        </section>
+       
+        <section id="registroCorrecto" class="oculto bg-slate-300 w-full h-screen flex flex-wrap justify-center content-evenly">
+            <div class="icono w-full text-center text-8xl text-green-600"><i class="far fa-check-circle"></i></div>
+            <p class="w-full text-green-600 text-center text-2xl">Usted se ha registrado con éxito!</p>
+            <form action="" class="w-full flex flex-wrap justify-center">
+                <button type="button" id="botonMenuPrincipal" class="w-2/3 bg-red-600 hover:bg-red-500 hover:text-gray-50 hover:cursor-pointer m-auto h-10 text-gray-300 font-bold text-sm mb-8">Menú Principal</button>
+                <button type="button" id="botonAtras" class="w-2/3 bg-red-600 hover:bg-red-500 hover:text-gray-50 hover:cursor-pointer m-auto h-10 text-gray-300 font-bold text-sm">Atrás</button>
+            </form>
+        </section>
+
+        <section id="dentro" class="oculto bg-slate-300 w-full h-screen flex flex-wrap justify-center content-between">
+            <header class="flex bg-red-500 w-full px-4 text-gray-300 h-12 items-center justify-between">
+                <div class="icon w-6 h-6 flex items-center justify-center rounded-full cursor-pointer hover:bg-gray-50 hover:text-red-600"><i class="fas fa-bars"></i></div>
+                <h2 class="font-bold justify-self-start">Location Tracker</h2>
+                <div class="icon w-6 h-6 flex items-center justify-center rounded-full cursor-pointer hover:bg-gray-50 hover:text-red-600"><i class="fas fa-ellipsis-v"></i></div>
+            </header>
+            <section class="w-full h-[90%] flex flex-wrap justify-center content-start relative">
+                <div class="icono bg text-8xl mt-20 mb-10"><i class="fas fa-search-location text-blue-500"></i></div>
+                <h2 class="w-full text-4xl text-center text-blue-500 font-bold mb-20">Corporis quam</h2>
+                <p class="info w-full text-center mb-10"></p>
+                <p class="coordenadas w-full text-center mb-4"></p>
+                <form action="" class="flex flex-wrap justify-center w-[80%]">
+                    <div class="contenedor w-full flex flex-wrap justify-center"><button type="button" class="fetchLocation w-2/3 bg-red-600 hover:bg-red-500 hover:text-gray-50 hover:cursor-pointer m-auto h-10 text-gray-300 font-bold mb-10 text-sm">FETCH LOCATION</button></div>
+                    <div class="contenedor w-full flex flex-wrap justify-center"><a target="_blank" class="showMap flex justify-center items-center w-2/3 bg-red-600 hover:bg-red-500 hover:text-gray-50 hover:cursor-pointer m-auto h-10 text-gray-300 font-bold text-sm cursor-pointer oculto">SHOW IN MAP</a></div>
+                </form>
+                <div class="contenedor w-full flex justify-center mt-10">
+                    <div class="flechaAtras w-6 h-6 flex justify-center items-center rounded-full hover:bg-red-500 text-gray-500 hover:text-gray-50 hover:cursor-pointer"><i class="fas fa-arrow-left text-lg"></i></div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

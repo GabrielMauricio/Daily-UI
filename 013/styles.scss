@@ -1,0 +1,239 @@
+@use "../partials" as *;
+
+* {
+    font-family: $fuenteRaleway;
+    font-size: 16px;
+}
+
+body {
+    background-color: $blanco-celeste;
+}
+
+#todo {
+    width: 70%;
+    margin: 0 auto;
+    color: $azul-oscuro1;
+    p::selection, textarea::selection, span::selection, h1::selection, h2::selection, label::selection {
+        background-color: $rosa-maraco;
+        color: $blanco1;
+    }
+    #header {
+        background-color: $negro4;
+        padding-left: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        height: 50px;
+        hgroup {
+            color: $rosa-maraco;
+            flex-basis: 30%;
+            display: flex;
+            .icono {
+                width: fit-content;
+                height: 50px;
+                cursor: pointer;
+                align-items: center;
+                display: flex;
+                i {
+                    font-size: 2em;
+                }
+            }
+            h1 {
+                cursor: pointer;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                font-size: 1.6em;
+                padding-left: 5px;
+                width: fit-content;
+            }
+        }
+        nav {
+            flex-basis: 70%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    width: fit-content;
+                    a {
+                        color: $blanco1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 10px;
+                        height: 50px;
+                        &:hover {
+                            border-top: 5px solid $rosa-maraco;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #titulos {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 0 10px;
+        h2 {
+            font-size: 1.3em;
+            width: fit-content;
+        }
+        button {
+            background-color: $rosa-maraco;
+            color: $blanco1;
+            font-weight: bold;
+            width: fit-content;
+            height: 30px;
+            padding: 0 10px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    #container {
+        display: flex;
+        #contactos {
+            background-color: $blanco-oscuro1;
+            flex-basis: 300px;
+            .contacto {
+                border: 1px solid rgba($negro3, 0.1);
+                border-left: none;
+                display: flex;
+                padding: 10px;
+                cursor: pointer;
+                figure {
+                    margin-right: 10px;
+                    width: fit-content;
+                    img {
+                        width: 35px;
+                    }
+                }
+                .texto {
+                    P {
+                        color: rgba($azul-oscuro1, 0.6);
+                        width: fit-content;
+                        border-bottom: 1px dotted rgba($azul-oscuro1, 0.6);
+                        font-size: 0.8em;
+                    }
+                }
+
+                &.oculto {
+                    display: none;
+                }
+                &:nth-of-type(1) {
+                    background-color: $blanco2;
+                    border: none;
+                }
+            }
+            button {
+                background-color: $blanco-oscuro1;
+                color: $azul-oscuro1;
+                padding: 5px 0;
+                cursor: pointer;
+                font-size: 0.9em;
+                border: 1px solid rgba($negro3, 0.1);
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        #chat {
+            background-color: $blanco2;
+            flex-grow: 1;
+            padding: 20px 30px;
+            form {
+                margin-bottom: 15px;
+                label {
+                    textarea {
+                        color: $azul-oscuro1;
+                        resize: none;
+                        margin: 10px 0;
+                        height: 130px;
+                        padding: 4px;
+                        border: none;
+                        &:focus {
+                            outline: 1px solid $rosa-maraco;
+                            &::placeholder {
+                                color: $rosa-maraco;
+                            }
+                        }
+                        &::placeholder {
+                            color: $azul-oscuro1;
+                        }
+                    }
+                }
+                .contenedorEnviar {
+                    display: flex;
+                    input[type="submit"] {
+                        background-color: $rosa-maraco;
+                        color: $blanco1;
+                        flex-basis: 120px;
+                        max-width: 120px;
+                        height: 30px;
+                        font-weight: bolder;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                    span {
+                        height: 30px;
+                        padding-left: 10px;
+                        font-size: 0.8em;
+                        flex-grow: 1;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+            #mensajes {
+                font-size: 0.8em;
+                display: grid;
+                gap: 15px;
+                
+                > * {
+                    width: 80%;
+                    padding: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    p {
+                        flex-basis: 100%;
+                        margin-bottom: 20px;
+                    }
+                    span {
+                        color: rgba($azul-oscuro1, 0.6);
+                        width: fit-content;
+                        font-size: 0.8em;
+                        border-bottom: 1px dotted rgba($azul-oscuro1, 0.6);
+                        cursor: default;
+
+                        &.icono {
+                            
+                            cursor: pointer;
+                            border: none;
+                            &:hover {
+                                color: $rosa-maraco;
+                            }
+                        }
+                    }
+                }
+                .recibido {
+                    background-color: $blanco-oscuro1;
+                    justify-self: flex-start;
+                }
+                .enviado {
+                    background-color: white;
+                    justify-self: flex-end;
+                }
+            }
+        }
+    }
+}

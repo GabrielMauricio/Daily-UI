@@ -1,0 +1,235 @@
+$verde-claro: rgba(186, 220, 88,1.0);
+$verde-oscuro: rgba(106, 176, 76,1.0);
+$azul-oscuro: rgba(19, 15, 64,1.0);
+$claro: rgba(223, 249, 251,1.0);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+body {
+    background-color: $claro;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+span, a, input, button {
+    display: block;
+}
+
+#todo {
+    padding: 20px;
+    background-color: $claro;
+    color: $azul-oscuro;
+    height: 100vh;
+    
+    #header {
+        display: flex;
+        justify-content: space-between;
+        height: 35vh;
+        border-bottom: 1px solid rgba($azul-oscuro, 0.1);
+
+        .iconoIzq, .iconoDer {
+            align-self: flex-start;
+            display: flex;
+            cursor: pointer;
+            i {
+                font-size: 1.6em;
+                &:hover {
+                    color: $verde-oscuro;
+                }
+            }
+        }
+        .iconoIzq {
+            justify-content: flex-start;
+        }
+        .iconoDer {
+            justify-content: flex-end;
+        }
+        .centro {
+            flex-basis: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            figure {
+                width: 100px;
+                img {
+                    height: 100px;
+                    border-radius: 100px;
+                    border: 4px solid $verde-oscuro;
+                    cursor: pointer;
+                }
+            }
+            h1 {
+                margin-top: 10px;
+                font-size: 1.4em;
+                font-weight: bold;
+                color: $verde-oscuro;
+            }
+            h2 {
+                font-size: 0.9em;
+                font-style: italic;
+                color: rgba($azul-oscuro, 0.4);
+            }
+            h3 {
+                font-size: 1em;
+                margin-top: 20px;
+            }
+            button {
+                background-color: $verde-oscuro;
+                color: $claro;
+                border: none;
+                height: 30px;
+                outline: none;
+                width: 100px;
+                margin-top: 20px;
+                border-radius: 20px;
+                cursor: pointer;
+                &:hover {
+                    background-color: $verde-claro;
+                }
+
+            }
+        }
+    }
+    #numeros {
+        height: 15vh;
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba($azul-oscuro, 0.1);
+        div {
+            flex-basis: 33%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                font-size: 2.5em;
+                color: $verde-oscuro;
+            }
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    #info {
+        padding: 10px 0;
+        height: 22vh;
+        border-bottom: 1px solid rgba($azul-oscuro, 0.1);
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 4px;
+            color: $verde-oscuro;
+        }
+        p {
+            font-size: 0.9em;
+        }
+        a {
+            margin-top: 8px;
+            color: $verde-claro;
+            width: fit-content;
+            &:hover {
+                color: $verde-oscuro;
+            }
+        }
+    }
+
+    #redes {
+        height: calc(28vh - 40px);
+        padding: 10px 0;
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 4px;
+            color: $verde-oscuro;
+        }
+        .iconos {
+            display: flex;
+            span {
+                margin: 5px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba($azul-oscuro, 0.2);
+                border-radius: 100px;
+                cursor: pointer;
+                &:hover {
+                    background-color: $azul-oscuro;
+                }
+                i {
+                    font-size: 1.2em;
+                    color: $claro;
+                }
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    #todo {
+        display: grid;
+        padding: 4px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            'cabecera cabecera cabecera info info'
+            'cabecera cabecera cabecera info info'
+            'cabecera cabecera cabecera info info'
+            'cabecera cabecera cabecera info info'
+            'numeros numeros numeros redes redes';
+        
+        #header, #numeros, #info, #redes {
+            height: auto;
+            padding: 6px;
+        }
+        #header {
+            grid-area: cabecera;
+            .iconoIzq {
+                flex-basis: 5%;
+            }
+            .iconoDer {
+                flex-basis: 5%;
+            }
+            .centro {
+                flex-basis: 90%;
+                
+            }
+        }
+        #numeros {
+            grid-area: numeros;
+            div {
+                span {
+                    font-size: 2em;
+                }
+                p {
+                    font-size: 1em;
+                }
+            }
+            
+        }
+        #info {
+            grid-area: info;
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+        #redes {
+            grid-area: redes;
+        }
+    }
+}

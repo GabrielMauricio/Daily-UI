@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, Times, serif;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span, img, input, a, button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: #0652dd;
+}
+
+* {
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+}
+
+#todo {
+  background-color: #dfe6e9;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#todo .boleta {
+  width: 600px;
+  padding: 50px;
+  background-color: white;
+  color: #2f3640;
+}
+#todo .boleta #header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#todo .boleta #header hgroup {
+  flex-grow: 1;
+}
+#todo .boleta #header hgroup h1 {
+  font-size: 2em;
+}
+#todo .boleta #header hgroup p {
+  color: rgba(47, 54, 64, 0.5);
+}
+#todo .boleta #header .icono {
+  width: fit-content;
+}
+#todo .boleta #header .icono i {
+  font-size: 1.6em;
+  color: rgba(47, 54, 64, 0.5);
+}
+#todo .boleta #data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(47, 54, 64, 0.2);
+}
+#todo .boleta #data span {
+  flex-basis: 60%;
+  color: rgba(47, 54, 64, 0.5);
+}
+#todo .boleta #data p {
+  width: fit-content;
+  font-weight: bolder;
+}
+#todo .boleta #dates {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(47, 54, 64, 0.2);
+}
+#todo .boleta #dates > * {
+  width: fit-content;
+}
+#todo .boleta #dates > * h2 {
+  color: rgba(47, 54, 64, 0.5);
+}
+#todo .boleta #dates > * p {
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+#todo .boleta #dates .icono i {
+  color: rgba(47, 54, 64, 0.2);
+}
+#todo .boleta #dates #depart h2 {
+  text-align: end;
+}
+#todo .boleta #prices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#todo .boleta #prices > span {
+  flex-basis: 60%;
+  color: rgba(47, 54, 64, 0.5);
+}
+#todo .boleta #prices p {
+  width: fit-content;
+  font-weight: bolder;
+}
+#todo .boleta #prices .total {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#todo .boleta #prices .total h3 {
+  flex-basis: 60%;
+  font-size: 2em;
+}
+#todo .boleta #prices .total > span {
+  width: fit-content;
+  font-size: 2em;
+  color: #4cd137;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=styles.css.map */

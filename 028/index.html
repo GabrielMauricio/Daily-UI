@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>028</title>
+</head>
+<body>
+    <section id="todo" class="2-full h-screen flex justify-center items-center bg-gradient-to-r from-purple-300 to-indigo-500">
+        <section class="contenedor w-[70%] bg-slate-200 px-10 py-6">
+            <header>
+                <h1 class="text-2xl sm:text-4xl bg-gradient-to-r from-purple-400 to-indigo-600 text-center font-bold bg-clip-text text-transparent mb-2">Responsive Contact us Form</h1>
+            </header>
+            <form action="" class="flex flex-wrap justify-between">
+                
+                <div class="contenedorInput relative w-full sm:w-[48%] my-6">
+                    <label for="firstName" class="cursor-pointer absolute top-1 left-1">First Name</label>
+                    <input type="text" name="firstName" id="firstName" required class="w-full p-1 outline-none bg-gray-100">
+                </div>
+
+                <div class="contenedorInput relative w-full sm:w-[48%] my-6">
+                    <label for="lastName" class="cursor-pointer absolute top-1 left-1">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" required class="w-full p-1 outline-none bg-gray-100">
+                </div>
+
+                <div class="contenedorInput relative w-full sm:w-[48%] my-6">
+                    <label for="email" class="cursor-pointer absolute top-1 left-1">Email Address</label>
+                    <input type="email" name="email" id="email" required class="w-full p-1 outline-none bg-gray-100">
+                </div>
+
+                <div class="contenedorInput relative w-full sm:w-[48%] my-6">
+                    <label for="website" class="cursor-pointer absolute top-1 left-1">Website Name</label>
+                    <input type="text" name="website" id="website" class="w-full p-1 outline-none bg-gray-100">
+                </div>
+
+                <label for="message" class="cursor-pointer mb-2">Write your message <span>(0 / 255)</span></label>
+                <textarea name="message" id="message" cols="30" rows="1" required class="w-full h-32 resize-none p-1 outline-none bg-gray-100" maxlength="255"></textarea>
+
+                <input type="submit" value="SUBMIT" id="inputSubmit" class="cursor-pointer bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded mt-4">
+            </form>
+        </section>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

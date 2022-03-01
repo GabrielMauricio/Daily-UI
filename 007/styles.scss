@@ -1,0 +1,93 @@
+$blanco: rgba(241, 242, 246,1.0);
+$gris: rgba(199, 236, 238,1.0);
+$negro: rgba(19, 15, 64,1.0);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    background-color: $blanco;
+    color: $negro;
+}
+span, img, input, a {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: auto;
+}
+#todo {
+    padding: 10px;
+}
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: center;
+    .flecha {
+        flex-basis: 5%;
+        cursor: pointer;
+    }
+    h1 {
+        flex-basis: 95%;
+        text-align: center;
+    }
+    form {
+        flex-basis: 95%;
+        margin-top: 20px;
+        position: relative;
+        i {
+            position: absolute;
+            font-size: 1em;
+            top: 6px;
+            left: 5px;
+        }
+        input {
+            width: 100%;
+            font-size: 1em;
+            padding: 4px 25px;
+            background-color: $gris;
+            &::placeholder {
+                color: rgba($negro, 0.6);
+            }
+        }
+    }
+}
+#options {
+    nav ul {
+        li {
+            height: 40px;
+            display: flex;
+            cursor: pointer;
+            &:hover {
+                background-color: $gris;
+            }
+            .icono {
+                flex-basis: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: 1.2em;
+                }
+            }
+            .caja {
+                flex-basis: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .flechaDer {
+                    i {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>014</title>
+</head>
+<body>
+    <section id="todo">
+        <header id="header">
+            <h1>Timer</h1>
+        </header>
+
+        
+        
+        <section id="timer">
+
+            <form action="" id="formulario">
+                <p>Ingrese una cantidad de tiempo para iniciar</p>
+                <label for="inputHoras">Horas: 
+                    <input type="number" name="inputHoras" id="inputHoras" max="23" min="0" value="0" required>
+                </label>
+                <label for="inputMinutos">Minutos
+                    <input type="number" name="inputMinutos" id="inputMinutos" min="0" max="59" value="0" required>
+                </label>
+                <label for="inputSegundos">Segundos
+                    <input type="number" name="inputSegundos" id="inputSegundos" min="0" max="59" value="0" required>
+                </label>
+                <input type="submit" id="botonIniciar" value="Iniciar">
+            </form>
+
+            <div id="contenedor" class="oculto">
+                <article id="hours">
+                    <span>X</span>
+                    <span>X</span>
+                </article>
+                <div class="dosPuntos"><span>:</span></div>
+                <article id="minutes">
+                    <span>X</span>
+                    <span>X</span>
+                </article>
+                <div class="dosPuntos"><span>:</span></div>
+                <article id="seconds">
+                    <span>X</span>
+                    <span>X</span>
+                </article>
+            </div>
+        </section>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>

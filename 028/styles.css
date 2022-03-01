@@ -1,0 +1,20 @@
+#todo h1 {
+    /* background-clip: text;
+    color: transparent; */
+}
+label {
+    transition: all 0.3s ease-in-out;
+}
+
+label.active {
+    font-size: 0.8em;
+    transform: translate(-4px, -25px);
+}
+
+label.valido, input.valido {
+    color: rgba(68, 189, 50,1.0);
+}
+label.invalido, input.invalido {
+    color: red;
+}
+

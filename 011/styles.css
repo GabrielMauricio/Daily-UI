@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, Times, serif;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span, img, input, a, button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: #0652dd;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+#todo {
+  width: 100%;
+  height: 200vh;
+  background-color: #222f3e;
+}
+
+.container1, .container2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 article, .container2 article {
+  background-color: #f5f6fa;
+  width: 80%;
+  border-radius: 20px;
+}
+.container1 article span, .container2 article span {
+  display: flex;
+  border-radius: 20px;
+}
+.container1 article span i, .container2 article span i {
+  background-color: #f5f6fa;
+  font-size: 4em;
+  width: fit-content;
+  position: relative;
+  top: -0.5em;
+  border-radius: 50px;
+  left: calc(50% - 0.5em);
+}
+.container1 article h1, .container2 article h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 8vh;
+  margin-bottom: 1vh;
+}
+.container1 article p, .container2 article p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12vh;
+}
+.container1 article button, .container2 article button {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+  border-radius: 20px;
+  padding: 8px 0;
+  cursor: pointer;
+  color: #f5f6fa;
+}
+.container1 article button:hover, .container2 article button:hover {
+  opacity: 0.8;
+}
+
+.container1 article {
+  color: #4cd137;
+}
+.container1 article button {
+  background-color: #4cd137;
+}
+
+.container2 article {
+  color: #ea2027;
+}
+.container2 article button {
+  background-color: #ea2027;
+}
+
+/*# sourceMappingURL=styles.css.map */

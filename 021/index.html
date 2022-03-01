@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <script src="https://kit.fontawesome.com/38aaed2a92.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>021</title>
+</head>
+<body>
+    <section id="todo" class="w-full h-screen overflow-auto bg-gradient-to-tr from-violet-400 to-gray-700 flex flex-wrap pt-4 justify-center items-start content-start">
+        <header class="flex bg-slate-300 opacity-60 justify-center items-center h-10 w-4/5">
+            <h2 class="w-full flex items-center justify-center grow text-center">HOME DASHBOARD</h2>
+            <span class="fecha oculto w-40 bg-teal-500 text-sm flex text-right">14/02/2012</span>
+        </header>
+
+        <section id="visor" class="w-4/5 h-fit flex flex-wrap items-center justify-center">
+            <div class="contenedor w-full grid grid-cols-1 grid-rows-4 gap-4 py-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-2">
+
+                <article id="temperature" class="bg-gray-200 opacity-70 flex flex-wrap justify-center items-start lg:col-span-2 lg:row-span-2">
+                    <header class="flex justify-center text-blue-500 w-full">
+                        <div class="icono mr-2"><i class="fas fa-temperature-low"></i></div>
+                        <h2>TEMPERATURE</h2>
+                    </header>
+                    <div class="contenido w-full min-h-[80%] flex items-center justify-center">
+                        <p class="text-6xl">26º</p>
+                    </div>
+                </article>
+
+                <article id="electricity" class="bg-gray-200 opacity-70 flex flex-wrap justify-center items-start">
+                    <header class="flex justify-center text-orange-500 w-full">
+                        <div class="icono mr-2"><i class="fas fa-bolt"></i></div>
+                        <h2>ELECTRICITY</h2>
+                    </header>
+                    <div class="contenido w-full min-h-[80%] flex items-center justify-center">
+                        <p class="text-6xl flex">843<span class="text-lg">KW</span></p>
+                    </div>
+                </article>
+
+                <article id="water" class="bg-gray-200 opacity-70 flex flex-wrap justify-center items-start">
+                    <header class="flex justify-center text-cyan-500 w-full">
+                        <div class="icono mr-2"><i class="fas fa-tint"></i></div>
+                        <h2>WATER</h2>
+                    </header>
+                    <div class="contenido w-full min-h-[80%] flex items-center justify-center">
+                        <p class="text-6xl flex">4.6<span class="text-2xl flex">m<span class="text-lg">3</span></span></p>
+                    </div>
+                </article>
+
+                <article id="lights" class="bg-gray-200 opacity-70 flex p-2 flex-wrap justify-center items-start lg:col-span-2">
+                    <header class="flex justify-center text-yellow-500 w-full">
+                        <div class="icono mr-2"><i class="fas fa-lightbulb"></i></div>
+                        <h2>LIGHTS</h2>
+                    </header>
+                    <div class="contenido w-[80%] min-h-[80%] flex items-center justify-center">
+                        <div class="places w-full">
+                            <div class="place border-b-2 border-gray-500 p-1 flex justify-between items-center">
+                                <p>HALL</p>
+                                <div class="interruptor apagado w-8 rounded-full h-4 cursor-pointer">
+                                    <div class="boton h-4 w-4 bg-gray-100 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="place border-b-2 border-gray-500 p-1 flex justify-between items-center">
+                                <p>LIVING ROOM</p>
+                                <div class="interruptor apagado w-8 rounded-full h-4 cursor-pointer">
+                                    <div class="boton h-4 w-4 bg-gray-100 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="place border-b-2 border-gray-500 p-1 flex justify-between items-center">
+                                <p>KITCHEN</p>
+                                <div class="interruptor apagado w-8 rounded-full h-4 cursor-pointer">
+                                    <div class="boton h-4 w-4 bg-gray-100 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

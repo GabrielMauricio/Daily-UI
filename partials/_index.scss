@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+$fuenteLato: 'Lato', sans-serif;
+$fuenteMontserrat: 'Montserrat', sans-serif;
+$fuenteRaleway: 'Raleway', sans-serif;
+$fuenteTajawal: 'Tajawal', sans-serif;
+
+
+$blanco1: rgba(245, 246, 250,1.0);
+$blanco2: rgba(241, 242, 246,1.0);
+$blanco-oscuro1: rgba(220, 221, 225,1.0);
+$blanco-oscuro2: rgba(223, 230, 233,1.0);
+$blanco-oscuro3: rgba(209, 216, 224,1.0);
+$blanco-celeste: rgba(223, 249, 251,1.0);
+$verde: rgba(106, 176, 76,1.0);
+$verde-amarillo: rgba(196, 229, 56,1.0);
+$verde-claro1: rgba(186, 220, 88,1.0);
+$verde-claro2: rgba(76, 209, 55,1.0);
+$verde-pastel1: rgba(29, 209, 161,1.0);
+$verde-pastel2: rgba(123, 237, 159,1.0);
+$verde-menta: rgba(11, 232, 129,1.0);
+$rojo1: rgba(232, 65, 24,1.0);
+$rojo-pastel: rgba(255, 71, 87,1.0);
+$rojo-fuerte: rgba(234, 32, 39,1.0);
+$naranjo: rgba(240, 147, 43,1.0);
+$amarillo1: rgba(249, 202, 36,1.0);
+$amarillo2: rgba(255, 211, 42,1.0);
+$azul-cielo: rgba(30, 144, 255,1.0);
+$azul-metalico: rgba(55, 66, 250,1.0);
+$azul-fuerte: rgba(6, 82, 221,1.0);
+$azul-profundo: rgba(27, 20, 100,1.0);
+$azul-oscuro1: rgba(19, 15, 64,1.0);
+$azul-oscuro2: rgba(25, 42, 86,1.0);
+$negro1: rgba(47, 54, 64,1.0);
+$negro2: rgba(34, 47, 62,1.0);
+$negro3: rgba(47, 53, 66,1.0);
+$negro4: rgba(30, 39, 46,1.0);
+$negro5: rgba(61, 61, 61,1.0);
+$morado-suave: rgba(120, 111, 166,1.0);
+$magenta: rgba(190, 46, 221,1.0);
+$rosa-maraco: rgba(243, 104, 224,1.0);
+$gris-oscuro1: rgba(87, 96, 111,1.0);
+$gris-oscuro2: rgba(72, 84, 96,1.0);
+$gris-claro: rgba(210, 218, 226,1.0);
+$turquesa-fresca: rgba(52, 231, 228,1.0);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+span, img, input, a, button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+a {
+    color: $azul-fuerte;
+}

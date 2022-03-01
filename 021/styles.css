@@ -1,0 +1,27 @@
+* {
+    transition: all 0.3s ease-in-out
+}
+.interruptor.encendido {
+    background-color: limegreen;
+}
+.interruptor.encendido .boton {
+    transform: translateX(1rem);
+}
+.interruptor.apagado {
+    background-color: red;
+}
+.oculto {
+    display: none;
+}
+
+@media (min-height: 650px) {
+    #todo {
+        background-color: aqua;
+        align-content: center;
+    }
+}
+@media (min-width: 550px) {
+    .oculto {
+        display: block;
+    }
+}

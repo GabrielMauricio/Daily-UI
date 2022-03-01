@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img, span, a, input {
+    display: block;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(1,0,47);
+    background: linear-gradient(94deg, rgba(1,0,47,1) 0%, rgba(0,57,135,1) 100%);
+    background-image: url("./persona.jpg");
+}
+#principal {
+    width: 60%;
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 20vh;
+    
+    h1 {
+        font-size: 2em;
+        color: white;
+    }
+    h2 {
+        font-size: 1em;
+        color: white;
+    }
+    form {
+        margin-top: 20px;
+        display: grid;
+        width: 40%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            grid-column: span 2;
+            &::placeholder {
+                font-style: italic;
+            }
+            &:nth-of-type(1), &:nth-of-type(2) {
+                grid-column: span 1;
+            }
+            &[type="checkbox"] {
+                height: 40px;
+                width: 90px;
+            }
+            &[type="number"] {
+                appearance: textfield;
+            }
+            &[type="submit"] {
+                background-color: darkmagenta;
+                color: white;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .caja {
+            grid-column: span 2;
+            display: flex;
+            gap: 15px;
+
+            span {
+                font-size: 0.6em;
+                line-height: 0.8em;
+                color: white;
+            }
+        }
+    }
+}

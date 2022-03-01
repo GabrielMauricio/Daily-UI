@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+img {
+    
+    height: auto;
+}
+/* 1650 x 720 */
+body {
+    width: 100%;
+    height: 100vh;
+}
+#todo {
+    width: 100%;
+    height: 100vh;
+
+    #pantalla {
+        height: 30vh;
+    }
+    #botones {
+        height: 70vh;
+
+        .contenedorOcultos {
+            height: 0px;
+        }
+
+        > .contenedorVisibles {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            height: 70vh;
+            
+            > button {
+                font-weight: bolder;
+                outline: none;
+
+                &:nth-of-type(20) {
+                    grid-row: span 2;
+                    background-color: dodgerblue;
+                    color: white;
+                }
+                &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+                    color: gray;
+                }
+                &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8), &:nth-of-type(12), &:nth-of-type(16) {
+                    color: dodgerblue;
+                }
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    #botones {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenedorOcultos {
+        height: 100% !important;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        flex-basis: 42.85%;
+
+        > button {
+            color: gray;
+            font-weight: bolder;
+            outline: none;
+        }
+    }
+    .contenedorVisibles {
+        flex-basis: 57.14%;
+    }    
+}
